@@ -1,0 +1,135 @@
+
+.accordin-content{
+    display: none;
+}
+
+
+.accordin-title.active + .accordin-content{
+    display: block;
+}
+
+
+.specs-list{
+    display: none;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.title h1 {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  margin-top: 40px;
+}
+
+.accordin-item {
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordin-title {
+  background-color: #66CCCC;
+  color: #fff;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordin-title.active {
+  background-color: #4CAF50;
+}
+
+.accordin-content {
+  display: none;
+  padding: 25px;
+  background-color: #f7f7f7;
+}
+
+.accordin-title.active + .accordin-content {
+  display: block;
+}
+
+.accordin-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordin-content li {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordin-content li:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+.accordin-content li:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.accordin-content li:last-child {
+  border-bottom: none;
+}
+
+.specs-list {
+  display: none;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordin-title.active ~ .specs-list {
+  display: block;
+}
+
+.specs-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.specs-list li:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+.specs-list li:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.specs-list li:last-child {
+  border-bottom: none;
+}
+
+#spec-heading {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
